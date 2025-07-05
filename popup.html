@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Persian Text Fixer</title>
+  <link rel="stylesheet" href="popup-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="popup-container">
+    <!-- Header with logo and brand -->
+    <header class="header">
+      <div class="brand">
+        <div class="logo-wrapper">
+          <img src="icons/icon48.png" alt="Persian Text Fixer" class="logo">
+          <div class="status-indicator"></div>
+        </div>
+        <div class="brand-info">
+          <h1 class="brand-name">Persian X</h1>
+          <p class="brand-tagline">افزونه هوشمند توییتر فارسی</p>
+        </div>
+      </div>
+      <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+      </button>
+    </header>
+
+    <!-- Statistics Dashboard -->
+    <section class="stats-dashboard">
+      <div class="stat-card">
+        <div class="stat-icon">
+          <i class="fas fa-text-height"></i>
+        </div>
+        <div class="stat-content">
+          <h3 class="stat-value" id="fixedTweets">0</h3>
+          <p class="stat-label">توییت اصلاح شده</p>
+        </div>
+        <div class="stat-chart">
+          <canvas id="fixedChart" width="60" height="30"></canvas>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon">
+          <i class="fas fa-language"></i>
+        </div>
+        <div class="stat-content">
+          <h3 class="stat-value" id="translatedItems">0</h3>
+          <p class="stat-label">متن ترجمه شده</p>
+        </div>
+        <div class="stat-chart">
+          <canvas id="translatedChart" width="60" height="30"></canvas>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <div class="stat-content">
+          <h3 class="stat-value" id="checkedLinks">0</h3>
+          <p class="stat-label">لینک بررسی شده</p>
+        </div>
+        <div class="stat-chart">
+          <canvas id="linksChart" width="60" height="30"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Settings Button -->
+    <section class="settings-section">
+      <button class="settings-btn" id="openSettings">
+        <i class="fas fa-cog"></i>
+        <span>تنظیمات افزونه</span>
+        <div class="ripple"></div>
+      </button>
+    </section>
+
+    <!-- Activity Timeline -->
+    <section class="activity-section">
+      <h2 class="section-title">
+        <i class="fas fa-history"></i>
+        آخرین فعالیت‌ها
+      </h2>
+      <div class="activity-timeline" id="activityTimeline">
+        <div class="activity-item">
+          <div class="activity-icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <div class="activity-content">
+            <p class="activity-text">۱۵ توییت اصلاح شد</p>
+            <time class="activity-time">۵ دقیقه پیش</time>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="https://github.com/MNSH-Nexo" target="_blank" class="footer-link">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://x.com/M_N_S_TON" target="_blank" class="footer-link">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+      <div class="footer-info">
+        <span class="version">v1.0.0</span>
+        <span class="separator">•</span>
+        <span class="status">فعال</span>
+      </div>
+      <div class="made-with-love">
+        ساخته شده با <i class="fas fa-heart pulse"></i> برای فارسی‌زبانان
+      </div>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,349 @@
+@font-face {
+  font-family: 'Vazir';
+  src: url(chrome-extension://__MSG_@@extension_id__/fonts/Vazirmatn-Regular.woff2) format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* استایل برای متن فارسی */
+.persian-styled {
+  font-family: 'Vazir', 'Segoe UI', Tahoma, sans-serif !important;
+  line-height: 1.8 !important;
+  font-size: clamp(14px, 1rem, 18px) !important;
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+/* استایل برای متن انگلیسی خالص */
+.english-styled {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+  line-height: 1.5 !important;
+  direction: ltr !important;
+  text-align: left !important;
+  font-size: inherit !important;
+}
+
+/* استایل برای متن ترکیبی با غلبه انگلیسی */
+.mixed-english-styled {
+  font-family: 'Vazir', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  line-height: 1.6 !important;
+  direction: ltr !important;
+  text-align: left !important;
+  font-size: inherit !important;
+}
+
+/* استایل هوشمند justify با بهینه‌سازی فاصله */
+body.ptf-justify-enabled .persian-styled.ptf-justify-smart {
+  text-align: justify !important;
+  text-align-last: right !important;
+  word-spacing: -0.1em !important;
+  letter-spacing: -0.02em !important;
+  hyphens: manual !important;
+  -webkit-hyphens: manual !important;
+  -moz-hyphens: manual !important;
+  text-justify: inter-character !important;
+  box-sizing: border-box !important;
+  transition: width 0.3s ease-out !important;
+}
+
+/* تنظیمات اضافی برای بهبود نمایش */
+body.ptf-justify-enabled .persian-styled.ptf-justify-smart {
+  word-break: keep-all !important;
+  overflow-wrap: break-word !important;
+}
+
+/* جلوگیری از justify در متن‌های انگلیسی */
+body.ptf-justify-enabled .english-styled,
+body.ptf-justify-enabled .mixed-english-styled {
+  text-align: left !important;
+  width: auto !important;
+}
+
+/* بهبود نمایش اعداد در متون فارسی */
+.persian-styled span[dir="ltr"] {
+  unicode-bidi: embed !important;
+  direction: ltr !important;
+}
+
+/* حاشیه برای متن‌های justify شده */
+.ptf-justify-smart {
+  border-radius: 8px !important;
+  /* رنگ پس‌زمینه حذف شد */
+  /* اگر می‌خواهید یک border داشته باشید، خط زیر را اضافه کنید: */
+  /* border: 1px solid rgba(0, 0, 0, 0.1) !important; */
+}
+
+/* سازگاری با حالت تاریک */
+html[data-color-mode="dark"] .ptf-justify-smart {
+  /* رنگ پس‌زمینه حذف شد */
+  /* اگر می‌خواهید در حالت تاریک border داشته باشید: */
+  /* border: 1px solid rgba(255, 255, 255, 0.1) !important; */
+}
+
+/* استایل Justify برای متن توییت‌ها - برای سازگاری با نسخه قبلی */
+.justify-text [data-testid="tweetText"] {
+  text-align: justify !important;
+  text-align-last: right !important;
+}
+
+/* استایل‌های لینک‌های بررسی شده */
+.unsafe-link {
+  color: #dc2626 !important;
+  text-decoration: underline wavy #dc2626 !important;
+  position: relative;
+  cursor: help;
+  animation: pulse 2s infinite;
+}
+
+.unsafe-link::after {
+  content: ' ⚠️';
+  font-size: 0.8em;
+}
+
+.suspicious-link {
+  color: #f97316 !important;
+  text-decoration: underline dotted #f97316 !important;
+  cursor: help;
+}
+
+.safe-link {
+  color: #16a34a !important;
+  text-decoration: none !important;
+  position: relative;
+}
+
+.safe-link::after {
+  content: ' ✓';
+  font-size: 0.7em;
+  color: #16a34a;
+}
+
+.failed-link {
+  color: #ea580c !important;
+  text-decoration: underline dotted #ea580c !important;
+}
+
+/* Tooltip برای لینک‌ها */
+.link-tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  font-family: 'Vazir', sans-serif;
+  margin-bottom: 5px;
+}
+
+.link-tooltip.show {
+  opacity: 1;
+}
+
+/* انیمیشن‌ها */
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+/* دسترسی‌پذیری - دکمه بزرگنمایی */
+.zoom-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #1d9bf0;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.zoom-button:hover {
+  background: #1a8cd8;
+  transform: scale(1.1);
+}
+
+/* Overlay بزرگنمایی */
+.zoom-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  backdrop-filter: blur(5px);
+}
+
+.zoom-content {
+  max-width: 800px;
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.zoom-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #e5e7eb;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.zoom-close:hover {
+  background: #d1d5db;
+}
+
+/* تم‌های رنگی دسترسی‌پذیری */
+.accessibility-theme-dark {
+  background-color: #111827 !important;
+  color: #f3f4f6 !important;
+}
+
+.accessibility-theme-yellow {
+  background-color: #000 !important;
+  color: #fbbf24 !important;
+}
+
+.accessibility-theme-blue {
+  background-color: #fff !important;
+  color: #1d4ed8 !important;
+  font-weight: 700 !important;
+}
+
+/* لینک‌های پررنگ */
+.accessibility-bold-links a {
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+}
+
+/* رابط کاربری ساده‌شده */
+.simplified-ui [data-testid="sidebarColumn"],
+.simplified-ui [aria-label="Trending"],
+.simplified-ui [aria-label="Who to follow"] {
+  display: none !important;
+}
+
+/* سازگاری با dark mode */
+html[data-color-mode="dark"] .zoom-overlay {
+  background: rgba(0, 0, 0, 0.95);
+}
+
+html[data-color-mode="dark"] .zoom-content {
+  background: #1f2937;
+  color: #f3f4f6;
+}
+
+html[data-color-mode="dark"] .zoom-close {
+  background: #374151;
+  color: #f3f4f6;
+}
+
+html[data-color-mode="dark"] .zoom-close:hover {
+  background: #4b5563;
+}
+
+/* انیمیشن‌های ترجمه */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.ptf-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes fadeInWord {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* استایل دکمه ترجمه */
+.ptf-translate-container {
+  display: inline-flex !important;
+  align-items: center !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.ptf-translate-btn {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* ترجمه */
+.ptf-translation {
+  contain: layout style;
+}
+
+.ptf-translation-text {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+/* سازگاری با dark mode برای ترجمه */
+html[data-color-mode="dark"] .ptf-translation {
+  background: rgba(29, 155, 240, 0.08) !important;
+  border-color: rgba(29, 155, 240, 0.3) !important;
+}
+
+/* Toast notification */
+.ptf-toast {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* استایل برای متن‌های کوتاه - بدون تغییر عرض */
+.ptf-short-text {
+  width: auto !important;
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
