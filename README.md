@@ -1,7 +1,7 @@
 ---
 <div align="center">
   
-<img src="https://raw.githubusercontent.com/MNSH-Nexo/Persian-X/main/assets/banner-persianx.png" alt="Persian X Banner" height="220">
+<img src="https://raw.githubusercontent.com/MNSH-Nexo/Persian-X/main/icons/orginal.png" alt="Persian X Banner" height="220">
 
 # 🚀 Persian X – ارتقاء تجربه فارسی‌زبانان در X (Twitter)
 
@@ -195,8 +195,6 @@ Persian-X/
 > برای هرگونه پیشنهاد، باگ یا همکاری به [Issues](https://github.com/MNSH-Nexo/Persian-X/issues) سر بزنید.
 >  
 > <sup>
-  متنی که خواندید تلفیقی از تخصص انسانی و مشارکت هوش مصنوعی‌های پیشرفته Grok و Claude Opus 4 بود.  
-  بطور مداوم با عشق، دانش و بهبودهای هوشمندانه به‌روزرسانی می‌شود.
 </sup>
 
 ---
