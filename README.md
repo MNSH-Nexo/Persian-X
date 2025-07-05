@@ -91,27 +91,6 @@ cd Persian-X
 
 ---
 
-## 🔬 ساختار پروژه
-
-Persian-X/
-├── manifest.json           # توضیحات، مجوزها
-├── background.js           # خدمات پس‌زمینه
-├── content.js              # اسکریپت محتوایی
-├── text-fixer.js           # موتور اصلاح متن فارسی
-├── translation.js          # ترجمه و دکمه‌های آن
-├── link-checker.js         # بررسی امنیت لینک‌ها
-├── accessibility.js        # ابزارهای خوانایی و دسترسی
-├── styles.css              # استایل‌های اختصاصی
-├── utils.js                # توابع کمکی (Toast, error handler,…)
-├── icons/                  # آیکون‌ها
-├── fonts/                  # قلم Vazirmatn
-├── popup.html/js/css       # پاپ‌آپ زیبا و واکنش‌گرا
-├── options.html/js/css     # پنل تنظیمات پیشرفته
-└── assets/                 # بنرها و دموها
-
-
----
-
 ## 💡 سوالات متداول (FAQ)
 
 ### ❓ آیا افزونه اطلاعات خصوصی کاربر را ثبت یا ارسال می‌کند؟
@@ -146,7 +125,7 @@ Persian-X/
 <table>
   <tr>
     <td align="center">
-      <img src="https://raw.githubusercontent.com/MNSH-Nexo/Persian-X/Persian-X/main/assets/claude.png" width="82"><br>
+      <img src="https://raw.githubusercontent.com/MNSH-Nexo/Persian-X/main/assets/claude.png" width="82"><br>
       <b>Claude Opus 4</b><br>
       <sub>Core developer & AI consultant<br> <a href="https://www.anthropic.com/">Anthropic AI</a></sub>
     </td>
