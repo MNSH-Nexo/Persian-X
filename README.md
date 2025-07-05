@@ -5,7 +5,7 @@
 
 # 🚀 Persian X – (Twitter) X ارتقاء تجربه فارسی‌زبانان در
 
-![Version](https://img.shields.io/github/package-json/v/MNSH-Nexo/Persian-X/main?style=flat-square)
+![Version](https://img.shields.io/github/manifest.json/v/MNSH-Nexo/Persian-X/main?style=flat-square)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green?style=flat-square)
 ![MIT License](https://img.shields.io/github/license/MNSH-Nexo/Persian-X?style=flat-square)
 ![Chrome Web Store](https://img.shields.io/chrome-web-store/v/your-extension-id?label=Chrome%20Web%20Store&logo=googlechrome&style=flat-square)
