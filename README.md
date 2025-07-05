@@ -156,7 +156,7 @@ Persian-X/
       <sub>AI Copilot<br> <a href="https://x.ai/">xAI (by X Corp.)</a></sub>
     </td>
     <td align="center">
-      <img src="https://avatars.githubusercontent.com/u/111830138?v=4" width="82" /><br>
+      <img src="https://avatars.githubusercontent.com/u/191394330?v=4" width="82" /><br>
       <b>MNSH-Nexo</b><br>
       <sub>Main Author & Maintainer<br><a href="https://github.com/MNSH-Nexo">GitHub</a></sub>
     </td>
