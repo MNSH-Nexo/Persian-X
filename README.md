@@ -55,9 +55,9 @@ _**Crafted with 🎓 Claude Opus 4 & Grok**_
 
 👇 ابزارها و دکمه‌های افزونه را اینجا ببینید:
 
-| ![popup](https://raw.githubusercontent.com/MNSH-Nexo/Persian-X/main/assets/popup.png) |  ![options](https://raw.githubusercontent.com/MNSH-Nexo/Persian-X/main/assets/options-panel.png) |
+| ![popup](https://raw.githubusercontent.com/MNSH-Nexo/Persian-X/main/assets/popup.png) |  ![options](https://raw.githubusercontent.com/MNSH-Nexo/Persian-X/main/assets/options-panel.png) | ![translate](https://raw.githubusercontent.com/MNSH-Nexo/Persian-X/main/assets/translate-btn.gif) |
 |---|---|---|
-| پاپ‌آپ افزونه | پنل تنظیمات حرفه‌ای |
+| پاپ‌آپ افزونه | پنل تنظیمات حرفه‌ای | دکمه ترجمه توییت |
 
 ---
 
