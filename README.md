@@ -146,12 +146,12 @@ Persian-X/
 <table>
   <tr>
     <td align="center">
-      <img src="https://raw.githubusercontent.com/MNSH-Nexo/Persian-X/Persian-X/tree/main/assets/claude.png" width="82"><br>
+      <img src="https://raw.githubusercontent.com/MNSH-Nexo/Persian-X/Persian-X/main/assets/claude.png" width="82"><br>
       <b>Claude Opus 4</b><br>
       <sub>Core developer & AI consultant<br> <a href="https://www.anthropic.com/">Anthropic AI</a></sub>
     </td>
     <td align="center">
-      <img src="https://raw.githubusercontent.com/MNSH-Nexo/Persian-X/tree/main/assets/grok.png" width="82"><br>
+      <img src="https://raw.githubusercontent.com/MNSH-Nexo/Persian-X/main/assets/grok.png" width="82"><br>
       <b>Grok</b><br>
       <sub>AI Copilot<br> <a href="https://x.ai/">xAI (by X Corp.)</a></sub>
     </td>
