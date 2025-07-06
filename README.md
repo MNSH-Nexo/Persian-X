@@ -1,7 +1,7 @@
 ---
 <div align="center">
   
-<img src="https://raw.githubusercontent.com/MNSH-Nexo/Persian-X/main/icons/orginal.png" alt="Persian X Banner" height="220">
+<img src="https://raw.githubusercontent.com/MNSH-Nexo/Persian-X/main/icons/original.png" alt="Persian X Banner" height="220">
 
 # 🚀 Persian X – (Twitter) X ارتقاء تجربه فارسی‌زبانان در
 
